@@ -1,0 +1,186 @@
+body {
+    background: #f1f3f6;
+}
+
+main {
+    background: #f1f3f6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bar-wrapper {
+    width: 50%;
+    background: #d2d8e2;
+    height: 32px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.bar {
+    background: #ff782d;
+    width: 0;
+    height: 24px;
+    position: absolute;
+    border-radius: 15px;
+    left: 4px;
+    top: 4px;
+}
+
+.counter {
+    color: #ff782d;
+    margin: 0 0 32px 0;
+    padding: 0;
+    font: 400 72px/1 monospace;
+    position: relative;
+}
+
+.config {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 32px 0 0 0;
+}
+
+.work,
+.break {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.config h2 {
+    color: #8ca4af;
+    margin: 0 0 32px 0;
+    padding: 0;
+    font: 400 18px/1 monospace;
+    text-align: center;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 3.8px 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgba(210, 216, 226, 0), 0px 0px 0px rgba(226, 229, 236, 0);
+    background: #d2d8e2;
+    border-radius: 25px;
+    border: 0px solid #d2d8e2;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px rgba(140, 164, 175, 0), 0px 0px 0px rgba(155, 176, 185, 0);
+    border: 3px solid rgba(255, 255, 255, 0);
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background: #ff782d;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.8px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #e2e5ec;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgba(210, 216, 226, 0), 0px 0px 0px rgba(226, 229, 236, 0);
+    background: #d2d8e2;
+    border-radius: 25px;
+    border: 0px solid #d2d8e2;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px rgba(140, 164, 175, 0), 0px 0px 0px rgba(155, 176, 185, 0);
+    border: 3px solid rgba(255, 255, 255, 0);
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background: #ff782d;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #c2cbd8;
+    border: 0px solid #d2d8e2;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px rgba(210, 216, 226, 0), 0px 0px 0px rgba(226, 229, 236, 0);
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #d2d8e2;
+    border: 0px solid #d2d8e2;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px rgba(210, 216, 226, 0), 0px 0px 0px rgba(226, 229, 236, 0);
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px rgba(140, 164, 175, 0), 0px 0px 0px rgba(155, 176, 185, 0);
+    border: 3px solid rgba(255, 255, 255, 0);
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background: #ff782d;
+    cursor: pointer;
+    height: 8.4px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #d2d8e2;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #e2e5ec;
+}
+
+.controller {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 18px;
+    border-color: transparent transparent transparent #ff772d;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    position: absolute;
+    right: -60px;
+    top: 20px;
+    cursor: pointer;
+    background: none;
+}
+
+.controller.paused {
+    border: none;
+    width: 12px;
+    height: 24px;
+    background: #ff772d;
+    right: -55px;
+    box-shadow: 15px 0 0 0 #ff772d;
+}
