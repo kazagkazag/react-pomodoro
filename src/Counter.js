@@ -1,23 +1,17 @@
-import React, {PropTypes} from "react";
-import * as utils from "./utils";
+import React from "react";
 
-function Counter(props) {
-    const className = `controller ${!props.isRunning ? "paused" : ""}`;
+function Counter() {
+    
+    const className = `controller`;
+    
     return (
         <h1 className="counter">
-            {utils.formatTime(props.time)}
+            0:00
             <button
                 className={className}
-                onClick={props.toggleTimer}
             />
         </h1>
     );
 }
-
-Counter.propTypes = {
-    time: PropTypes.number,
-    toggleTimer: PropTypes.func,
-    isRunning: PropTypes.bool
-};
 
 export default Counter;

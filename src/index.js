@@ -4,9 +4,6 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <App
-      workMax={25}
-      breakMax={10}
-  />,
+  <App />,
   document.getElementById('root')
 );

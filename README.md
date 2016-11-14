@@ -6,10 +6,12 @@ Simple demonstration of the react application built on top of create-react-app.
 
 * download repo
 * run `npm install`
-* run `npm start`
+* run `npm serve`
 
 Your browser should open with our application. You can adjust time of
 work and break and start counting. That's all.
+
+To implement demo run `npm start` and start coding.
 
 # Pomodoro technique
 

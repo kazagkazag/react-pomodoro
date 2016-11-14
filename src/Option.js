@@ -1,28 +1,20 @@
-import React, {PropTypes} from "react";
+import React from "react";
 
-function Option(props) {
+function Option() {
     return (
         <section className="work">
 
-            <h2>{props.title}</h2>
+            <h2>Title</h2>
 
             <input
                 type="range"
                 min="1"
-                max={props.max}
+                max="20"
                 step="1"
-                value={props.value}
-                onChange={(event) => props.onChange(event.target.value)}
+                value="10"
             />
         </section>
     );
 }
-
-Option.propTypes = {
-    title: PropTypes.string,
-    max: PropTypes.number,
-    value: PropTypes.number,
-    onChange: PropTypes.func
-};
 
 export default Option;
